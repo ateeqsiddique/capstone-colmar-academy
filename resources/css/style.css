@@ -254,3 +254,45 @@ img.mobile{
   background-color: inherit;
 }
 }
+
+/* Section Three */
+
+.startlearning{
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 0rem 1rem 0rem;
+  line-height: 0;
+}
+
+.curriculum{
+  width: 100%;
+  background-color: grey;
+}
+
+.course{
+  background-color: white;
+}
+.courses{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.course{
+  display: flex;
+  width: 28%;
+  flex-direction: column;
+  margin: 1rem;
+}
+.course h3, .course p{
+  padding-left: 1rem;
+}
+
+.course img{
+  max-width: 100%;
+  height:auto;
+  display: block;
+}

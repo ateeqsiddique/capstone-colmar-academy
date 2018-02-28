@@ -296,3 +296,20 @@ img.mobile{
   height:auto;
   display: block;
 }
+
+/* section-three Media Query */
+@media only screen and (max-width:560px) {
+.course img, .course p {
+  display: none;
+}
+
+.course{
+  width:80%;
+  margin: 0.25rem;
+  padding-right: 0.5rem;
+}
+
+.startlearning{
+  margin-top: 2rem;
+}
+}

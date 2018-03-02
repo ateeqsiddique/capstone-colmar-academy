@@ -1,8 +1,23 @@
+/* General */
+
 html{
   font-size: 16px;
   margin: 0;
   background-color: white;
   width: 100%;
+  font-family: "Libre Baskerville",serif;
+}
+
+
+h1{
+  font-family: "Libre Franklin",sans-serif;
+  font-weight: 700;
+
+}
+
+h2{
+  font-family: "Libre Franklin",sans-serif;
+  font-weight: 600;
 
 }
 body{
@@ -19,8 +34,16 @@ header{
 a{
   text-decoration: none;
   color: black;
+  transition: color 800ms ease 300ms,
+              font-size 1s linear 300ms;
 
 }
+
+a:hover{
+  color: rgba(249,58,0,0.9);
+  font-size: 1.1rem;
+}
+
 
 .menu{
   display: flex;
@@ -64,6 +87,7 @@ a{
   width: 100%;
   justify-content:space-around;
   align-items: center;
+
 }
 
 .logo {
@@ -83,7 +107,7 @@ a{
   display: flex;
   width: 100%;
   padding: 1.5rem;
-  background-color: gray;
+  background-color: rgba(140,141,140,0.7);
   margin:0;
 
 }
@@ -99,27 +123,37 @@ a{
 .learnsomething{
   width: 40%;
   display: flex;
-  margin-left: 1.5rem;
-  margin-right: 4.5rem;
+  padding-left: 1.5rem;
+  padding-right: 4.5rem;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
 .learnsomething h1{
   font-size: 3rem;
-  font-weight: 800;
+
 }
 
 .learnsomething p{
   font-size: 1.5rem;
 }
 .startbutton{
-  background-color: black;
+  background-color: rgba(22,25,128,0.9);
   color: white;
   text-align: center;
   font-size: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  border-radius: 20px;
+  transition: background-color 800ms ease-in-out 200ms;
+}
+
+.startbutton:hover{
+  background-color: rgba(249,58,0,0.9);
+}
+
+.startbutton:visited{
+  background-color: rgba(91,26,121,0.7);
 }
 /* section-one Media Query */
 @media only screen and (max-width:560px) {
@@ -144,7 +178,7 @@ a{
   margin:0rem 1rem 2rem 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: darkgray;
+  background-color:rgba(22,25,128,0.9);
   color: white;
 }
 }
@@ -153,6 +187,7 @@ a{
 .section-two{
   display: flex;
   width: 100%;
+  margin: 0;
 
 }
 
@@ -161,12 +196,12 @@ a{
   height:20rem;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
   padding: 2rem 1.5rem;
+  margin:0;
 }
 
 .readingphoto img{
-  max-width: 100%;
+  max-width: 96%;
   height: auto;
   display: block;
 
@@ -203,11 +238,17 @@ a{
 }
 
 .trio .third{
-  background-color: gray;
+  background-color:rgba(140,141,140,0.7);
 }
 
 .read a{
-  color: blue;
+  color: rgba(22,25,128,0.9);
+  transition: all 0.5s linear 300ms;
+}
+
+.read a:hover{
+  color: rgba(249,58,0,0.9);
+  font-size: 1.2rem;
 }
 
  img.mobile{
@@ -251,7 +292,7 @@ img.mobile{
 
 }
 .trio .third{
-  background-color: inherit;
+  background-color:rgba(140,141,140,0.7);
 }
 }
 
@@ -267,7 +308,7 @@ img.mobile{
 
 .curriculum{
   width: 100%;
-  background-color: grey;
+  background-color:rgba(140,141,140,0.7);
 }
 
 .course{
@@ -287,7 +328,7 @@ img.mobile{
   flex-direction: column;
   margin: 1rem;
 }
-.course h3, .course p{
+.course h2, .course p{
   padding-left: 1rem;
 }
 
@@ -307,6 +348,11 @@ img.mobile{
   width:80%;
   margin: 0.25rem;
   padding-right: 0.5rem;
+  transition: background-color 700ms ease 100ms;
+}
+
+.course:hover{
+  background-color: rgba(249,58,0,0.9);
 }
 
 .startlearning{
@@ -325,7 +371,6 @@ img.mobile{
 .thesis-exhibit{
   width: 100%;
   text-align: center;
-  /* margin-top: 1rem; */
   padding: 2rem 0rem 1rem 0rem;
   line-height: 0;
 }
@@ -355,7 +400,7 @@ video{
 .thesisfirst{
   margin-top: 2rem;
   padding: 1rem;
-  background-color: grey;
+  background-color:rgba(140,141,140,0.7);
 }
 
 .thesisfirst, .thesissecond{
@@ -392,12 +437,8 @@ video{
 .thesisvideo{
   width:100%;
   margin: 0rem;
-  /* padding-right: 0.5rem; */
 }
 
-.thesis-exhibit{
-  /* margin-top: 2rem; */
-}
 }
 /* Footer */
 
